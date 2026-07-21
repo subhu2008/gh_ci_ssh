@@ -5,8 +5,8 @@ on:
 
 jobs:
   debug:
-    runs-on: ubuntu-24.04
-    timeout-minutes: 360
+    runs-on: ubuntu-latest 
+    timeout-minutes: 163842
 
     steps:
       - name: Checkout
