@@ -1,11 +1,11 @@
-name: CI ssh (Debian 13 test)
+name: CI ssh (Ubuntu 26.04)
 
 on:
   workflow_dispatch:
 
 jobs:
   debug:
-    runs-on: debian-13
+    runs-on: ubuntu-26.04
     timeout-minutes: 360
 
     steps:
