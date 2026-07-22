@@ -1,4 +1,4 @@
-name: CI ssh (Test arm64)
+name: CI ssh (Ubuntu 26.04 arm64)
 
 on:
   workflow_dispatch:
