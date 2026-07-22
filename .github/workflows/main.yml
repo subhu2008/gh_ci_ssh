@@ -6,7 +6,7 @@ on:
 jobs:
   debug:
     runs-on: ubuntu-26.04
-    timeout-minutes: 163842
+    timeout-minutes: 360
 
     steps:
       - name: Checkout
