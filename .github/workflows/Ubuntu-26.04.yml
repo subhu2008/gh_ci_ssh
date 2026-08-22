@@ -40,7 +40,42 @@ jobs:
             automake \
             autoconf \
             m4 \
-            pkg-config
+            pkg-config \
+            libxml2-utils \
+            xsltproc \
+            xz-utils \
+            zstd \
+            lz4 \
+            gzip \
+            bzip2 \
+            openjdk-11-jdk \
+            git-lfs \
+            rsync \
+            zip \
+            gcc \
+            g++ \
+            kmod \
+            libssl-dev \
+            libelf-dev \
+            libncurses-dev \
+            libdw-dev \
+            dwarves \
+            python3-venv \
+            file \
+            ca-certificates \
+            pigz
+
+      - name: Setup repo
+        run: |
+          mkdir -p /usr/local/bin
+          sudo curl -o /usr/local/bin/repo https://storage.googleapis.com/git-repo-downloads/repo
+          sudo chmod +x /usr/local/bin/repo
+          repo --version
+
+      - name: Configure git
+        run: |
+          git config --global user.name MAdMiZ
+          git config --global user.email mizdrake7@gmail.com
 
       # Add your build/setup steps here
       - name: Test
