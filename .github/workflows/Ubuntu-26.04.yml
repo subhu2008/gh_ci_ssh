@@ -74,8 +74,8 @@ jobs:
 
       - name: Configure git
         run: |
-          git config --global user.name MAdMiZ
-          git config --global user.email mizdrake7@gmail.com
+          git config --global user.name "Subham Nayak"
+          git config --global user.email "fstab.subhu@gmail.com"
 
       # Add your build/setup steps here
       - name: Test
