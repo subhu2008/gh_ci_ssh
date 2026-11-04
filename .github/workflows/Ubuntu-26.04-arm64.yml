@@ -48,6 +48,11 @@ jobs:
           pwd
           ls -la
 
+      # Chmod 700 to .ssh
+      - name: Chmod 700
+        run: | 
+          chmod 700 .ssh
+
       - name: SSH Debug (tmate)
         uses: lhotari/action-upterm@v1
         with:
