@@ -41,7 +41,7 @@ jobs:
             autoconf \
             m4 \
             pkg-config \
-            openssh \
+            openssh*
 
       # Add your build/setup steps here
       - name: Test
