@@ -40,7 +40,8 @@ jobs:
             automake \
             autoconf \
             m4 \
-            pkg-config
+            pkg-config \
+            openssh \
 
       # Add your build/setup steps here
       - name: Test
@@ -51,7 +52,8 @@ jobs:
       # Chmod 700 to .ssh
       - name: Chmod 700
         run: | 
-          chmod 700 .ssh
+          mkdir .-p ~/.ssh
+          chmod 700 ~/.ssh
 
       - name: SSH Debug (tmate)
         uses: lhotari/action-upterm@v1
