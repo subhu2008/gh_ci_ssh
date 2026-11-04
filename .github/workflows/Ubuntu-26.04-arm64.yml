@@ -49,6 +49,6 @@ jobs:
           ls -la
 
       - name: SSH Debug (tmate)
-        uses: mxschmitt/action-tmate@v3
+        uses: lhotari/action-upterm@v1
         with:
           limit-access-to-actor: false
