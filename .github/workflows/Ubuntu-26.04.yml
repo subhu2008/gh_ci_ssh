@@ -41,7 +41,7 @@ jobs:
             autoconf \
             m4 \
             pkg-config \
-            libxml2-utils \
+            libxml2-16 \
             xsltproc \
             xz-utils \
             zstd \
