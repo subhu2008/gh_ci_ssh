@@ -41,7 +41,7 @@ jobs:
             autoconf \
             m4 \
             pkg-config \
-            libxml2-utils \
+            libxml2-16 \
             xsltproc \
             xz-utils \
             zstd \
@@ -71,6 +71,8 @@ jobs:
           sudo curl -o /usr/local/bin/repo https://storage.googleapis.com/git-repo-downloads/repo
           sudo chmod +x /usr/local/bin/repo
           repo --version
+          sudo ln -sf /usr/lib/x86_64-linux-gnu/libxml2.so.16 /usr/lib/x86_64-linux-gnu/libxml2.so.2
+          sudo ldconfig
 
       - name: Configure git
         run: |
